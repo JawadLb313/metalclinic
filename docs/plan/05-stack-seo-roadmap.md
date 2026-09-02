@@ -6,17 +6,15 @@
 
 | Package | Why |
 |---|---|
-| `next` 15 | App Router, static export of every marketing page |
+| `next` 15 | App Router with `output: 'export'` — pure static HTML, no runtime |
 | `react` 19 / `typescript` | — |
 | `tailwindcss` v4 | CSS-first tokens |
 | `motion` | Scroll reveal, gallery FLIP, accordion. ~3 kB used |
 | `@radix-ui/react-{dialog,accordion,toggle-group}` | Correct ARIA for the four interactive patterns |
 | `lucide-react` | Icons, tree-shaken |
-| `resend` | Form email |
-| `zod` | Server-action input validation |
-
-No UI kit, no animation library beyond Motion, no CMS at v1, no analytics SDK
-that ships 40 kB. Total JS budget below.
+No UI kit, no animation library beyond Motion, no CMS, **no mail service, no
+validation library, no backend of any kind** — contact is a WhatsApp / `mailto:`
+redirect (`06-static-build-decision.md`). Total JS budget below.
 
 ---
 
@@ -27,12 +25,12 @@ that ships 40 kB. Total JS budget below.
 | LCP | < 2.0 s on 4G |
 | CLS | < 0.02 |
 | INP | < 150 ms |
-| First-load JS (homepage) | **< 110 kB gzipped** |
+| First-load JS (homepage) | **< 85 kB gzipped** (was 110 kB before the backend came out) |
 | Hero image | < 180 kB AVIF |
 | Total page weight (home) | < 900 kB including images |
 | Lighthouse | 95+ across all four categories |
 
-**How we hold it:** static generation everywhere; ~9 client components total;
+**How we hold it:** fully static export, zero server runtime; ~9 client components total;
 `next/font` self-hosting the three faces with `display: swap` and subset to latin;
 AVIF/WebP with explicit dimensions; the map facade (§3 of `04-interactions.md`);
 no video; no embedded Instagram feed.
@@ -88,14 +86,19 @@ own. Do these in parallel with the build, not after it.
 
 ## 5. Hosting & operations
 
-- **Vercel**, production on `themetalclinic.com`, previews per branch.
+- **Any static host** — Netlify, Cloudflare Pages, GitHub Pages or Vercel are
+  all equivalent for a static export, and all are free at this traffic level.
+  Production on `themetalclinic.com`, deploy previews per branch.
 - DNS: keep the registrar, point A/CNAME at Vercel. `[CONFIRM: who controls the domain?]`
 - **The existing site must be preserved before cutover** — take a full copy of the
   current pages, especially the Terms of Service, which is the only legal text
   the business has published. Do not lose it.
 - Redirects from any existing URLs to the new ones (301) so the little link equity
   there is survives.
-- Uptime check + a form-submission alert so a broken contact form doesn't fail silently.
+- Uptime check only. There is no form to fail silently — but **test the WhatsApp
+  and `mailto:` links on real iOS and Android hardware after every deploy**,
+  because a malformed `wa.me` link is now the single point of failure in the
+  entire contact path.
 
 ---
 
@@ -125,6 +128,8 @@ localisation, online-coaching payments (Stripe), a real booking calendar.
 | Risk | Mitigation |
 |---|---|
 | Copy ships with invented stats or testimonials | Every figure is a `[CONFIRM]`; `consent: true` is a required literal in the CaseFile type |
+| A broken `wa.me` link kills every enquiry | It is the only contact path — test on real iOS and Android after each deploy |
+| No lead record if Alain loses the chat | Accepted trade-off; revisit only if volume justifies a CRM |
 | No professional photos → stock creeps in | Phase 0 gate: no build starts before the shoot is booked |
 | Prices published, then reality changes | Prices live in one file; a "from $X" pattern plus an on-request tier keeps it flexible |
 | Site launches, nothing changes in search | Local SEO tasks in Phase 2 are the actual lever; the site alone is not |

@@ -159,22 +159,50 @@ features still reliably granted to local businesses.
 
 ---
 
-## 9. Contact / assessment form
+## 9. Enquiry composer (replaces the contact form)
 
-- Progressive: works as a plain POST to a Next.js **server action**; JS only adds
-  inline validation and the success state.
-- Validation on blur, not on keystroke. Errors are text + icon + colour, never
-  colour alone.
-- Submit button enters a `SENDING…` state with the label swapped, `aria-busy`,
-  and is disabled to prevent double-submit.
-- Success replaces the form with a confirmation panel + a WhatsApp link.
-- Failure shows the WhatsApp fallback inline — never a dead end.
-- **Spam:** honeypot field + a timing check + Cloudflare Turnstile if it becomes a
-  problem. No reCAPTCHA (it's a third-party cookie and a UX tax).
-- Sends to `info@themetalclinic.com` via Resend, plus an optional row to a Google
-  Sheet so leads are never trapped in one inbox.
+**There is no form submission anywhere on this site.** See
+`06-static-build-decision.md`. The composer is a short guided set of fields that
+**builds a prefilled message** and hands it to WhatsApp or the visitor's mail
+client.
 
----
+**Fields:** name · what are you after (select) · how often could you train
+(select) · anything we should know (textarea, optional).
+
+**Behaviour**
+- Two equally weighted links: `SEND ON WHATSAPP` (ember) and `SEND BY EMAIL` (ghost).
+- Both are real `<a href>` elements. The `href` is recomputed on every input
+  event, so **the composer works with JavaScript disabled** — it just sends the
+  generic version of the message.
+- Nothing validates, nothing errors, nothing blocks. Only the name is expected,
+  and even that is not enforced: a required field is a reason to abandon.
+- `encodeURIComponent` every value. Keep the `mailto:` body under ~1,800
+  characters — some clients truncate past ~2,000.
+- Below the buttons, the raw number and email are always shown as selectable
+  text. Some people copy rather than click, and on desktop a `mailto:` can open
+  nothing at all.
+- A live preview panel shows the exact message that will be sent. It removes the
+  "what is this about to do?" hesitation, and costs nothing to render.
+
+**Composed message**
+```
+Hi Alain — I'd like to book an assessment.
+
+Name: Karim
+Interested in: Transformation Protocol
+Availability: 3-4 days a week
+Notes: Lower back issue from 2019, desk job.
+
+(Sent from themetalclinic.com)
+```
+
+**A11y:** ordinary `<label>` on every field; the two actions are links, not
+buttons, and are announced as such; the preview sits in a `role="status"` region
+so a screen-reader user hears the message update.
+
+**What this removes:** spam protection, validation states, loading and error
+states, deliverability, and the silent-failure mode where a form quietly stops
+sending for months. None of it exists any more.
 
 ## 10. WhatsApp floating action button
 
@@ -196,4 +224,5 @@ features still reliably granted to local businesses.
 | Preloader animation | An artificial delay on a site whose job is to load fast |
 | Live class-booking calendar | Real complexity, real cost; WhatsApp is what people use. Revisit at phase 3 if volume justifies it |
 | Instagram feed embed | The official embed is heavy and breaks on API changes. Use 6 hand-picked stills linking to the profile |
+| Any server-side feature | Static build. No form endpoint, no newsletter signup, no member login, no lead database |
 | Dark/light toggle | The brand is one world. A light mode here would be a different company |

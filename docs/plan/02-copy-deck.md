@@ -218,7 +218,7 @@ Programme-only, no coaching `$[XX]`
 - **Sub:** "Book an assessment, or just ask a question. Fastest answer is WhatsApp."
 
 **Contact rail**
-- `WHATSAPP` — `+961 3 402 413` — "Usually answered within the hour" `[CONFIRM]`
+- `WHATSAPP` — `+961 3 402 413` — "Usually answered within the hour" `[CONFIRM]` — **the main channel**
 - `CALL` — `+961 3 402 413`
 - `EMAIL` — `info@themetalclinic.com`
 - `INSTAGRAM` — `@themetalclinic`
@@ -231,12 +231,17 @@ than a street name.
 **Hours table** — Mon–Fri `[CONFIRM]`, Sat `[CONFIRM]`, Sun `[CONFIRM]`.
 Show a live `OPEN NOW` / `CLOSED` pill computed against Beirut time.
 
-**Form fields:** Name* · WhatsApp number* · Email · "What are you after?" (select:
-Transformation / One-to-one / Small group / Nutrition / Online / Just looking) ·
-"Anything we should know?" (textarea: injuries, schedule, history) · consent checkbox.
-- **Submit:** `SEND IT`
-- **Success:** "Got it. We'll be in touch on WhatsApp, usually same day."
-- **Error:** "That didn't send. Message us on WhatsApp instead — [link] — and we'll pick it up there."
+**Enquiry composer** *(static site — nothing is submitted; the fields build a
+prefilled WhatsApp or email message. See `06-static-build-decision.md`.)*
+
+- Intro line: "Fill this in and it'll open WhatsApp with your message ready to send. Nothing is stored on this site."
+- `Your name`
+- `What are you after?` — Transformation / One-to-one / Small group / Nutrition / Online / Just looking
+- `How often could you train?` — 1–2 days / 3–4 days / 5+ days a week
+- `Anything we should know?` — "Injuries, surgeries, your schedule, how long it's been. Optional, but it makes the first session better."
+- Preview panel heading: `YOUR MESSAGE`
+- **Primary action:** `SEND ON WHATSAPP` · **Secondary:** `SEND BY EMAIL`
+- Under the buttons: "Or reach us directly — +961 3 402 413 · info@themetalclinic.com"
 
 **Map:** embedded, pin at `33.9194105, 35.6151544`, with a `GET DIRECTIONS` button
 opening Google Maps in a new tab.

@@ -111,9 +111,10 @@ copy available and it costs nothing — it's already true.
   hard-code English strings into components. `[CONFIRM: is Arabic needed at launch?]`
 - **Currency.** Lebanon quotes coaching in fresh USD. Show `$`. Never publish a
   price I invented — all prices below are `$[XX]`.
-- **WhatsApp is the real booking channel.** In Lebanon a contact form is the
-  polite option; WhatsApp is the one people actually use. Both, with WhatsApp
-  given equal weight.
+- **WhatsApp is the booking channel.** In Lebanon a contact form is the polite
+  option; WhatsApp is the one people actually use. The site is a **static build
+  with no backend** — enquiries open a prefilled WhatsApp chat or an email, and
+  nothing is submitted anywhere. See `06-static-build-decision.md`.
 - **Mobile-first is not a slogan here.** Assume the majority of traffic is a
   phone arriving from an Instagram link, on a patchy connection. Performance
   budget in `05-stack-seo-roadmap.md` is written for that.

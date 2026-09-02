@@ -1,13 +1,18 @@
 # 03 — Component Architecture
 
-Stack: **Next.js 15 (App Router) · TypeScript · Tailwind CSS v4 · Motion (Framer) · Vercel**
+Stack: **Next.js 15 (App Router, static export) · TypeScript · Tailwind CSS v4 · Motion**
+
+> **Static build.** Per `06-static-build-decision.md` this site has no server
+> runtime: no API routes, no server actions, no database. Contact is a WhatsApp
+> or `mailto:` redirect. Everything else below is unchanged.
 
 ---
 
 ## 1. Why this stack
 
-- **Next.js App Router** — static generation for every marketing page, one server
-  action for the contact form. Perfect Lighthouse is achievable and cheap here.
+- **Next.js App Router with `output: 'export'`** — every page pre-rendered to
+  static HTML at build time. No runtime to pay for, patch or debug. Deployable
+  to any static host.
 - **Tailwind v4** — CSS-first config. The design tokens from `01-design-system.md`
   live in one `@theme` block and become utilities automatically. No `tailwind.config.js` to drift.
 - **Motion** — `<3kb` for what we need. Only imported in the two components that animate.
@@ -50,15 +55,25 @@ components/
 ├── sections/  Hero, CredentialStrip, StatBand, AboutCoach, ProtocolSteps,
 │              ProgramAccordion, WhyUs, Gallery, CaseFiles, PricingTable,
 │              FaqAccordion, LocationMap, ClosingCta
-└── forms/     ContactForm, AssessmentForm
+└── forms/     EnquiryComposer   # builds a WhatsApp / mailto link — no submission
 content/       site.ts, programs.ts, pricing.ts, faq.ts, caseFiles.ts, gallery.ts, hours.ts
 lib/           schema.ts (JSON-LD), hours.ts (open-now logic), analytics.ts, cn.ts
 ```
 
-**Server/client split:** everything is a Server Component by default. Only these
-carry `'use client'` — `MobileNav`, `Accordion`, `Toggle`(pricing), `Gallery`(lightbox),
-`ContactForm`, `Stat`(count-up), `LocationMap`(facade), `Header`(scroll state),
-`StickyMobileCta`. That's ~9 client components on the whole site.
+**Server/client split:** everything renders at build time. Only these carry
+`'use client'` — `MobileNav`, `Accordion`, `Toggle`(pricing), `Gallery`(lightbox),
+`EnquiryComposer`, `Stat`(count-up), `LocationMap`(facade), `Header`(scroll state),
+`StickyMobileCta`. Nine client components on the whole site, and none of them
+talks to a server.
+
+```js
+// next.config.mjs
+export default {
+  output: 'export',
+  images: { unoptimized: true },   // AVIF/WebP pre-optimised and committed
+  trailingSlash: true,
+};
+```
 
 ---
 
