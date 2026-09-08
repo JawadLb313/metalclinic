@@ -1,37 +1,81 @@
-# metalclinic
+# The Metal Clinic — website
 
-Planning workspace for **The Metal Clinic** (Alain Eid — coaching gym, Metn, Lebanon).
-**Research and planning only. Nothing has been built.**
+Static site for **The Metal Clinic**, an assessment-led coaching gym in Metn,
+Mount Lebanon (Alain Eid — ACSM-CPT, Pn1, ACE-FTS).
 
-**Build shape:** a fully **static site** — no backend, no form submissions.
-Enquiries open a prefilled **WhatsApp** chat or an **email**. See
-[`docs/plan/06-static-build-decision.md`](docs/plan/06-static-build-decision.md).
+No build step, no framework, no backend, no database. Plain HTML, CSS and about
+120 lines of JavaScript. Every enquiry is a `tel:` or `mailto:` link.
 
-## Research
-- [`docs/research/business-profile.md`](docs/research/business-profile.md) —
-  business profile and digital-presence audit across Google Maps, Instagram,
-  Facebook and the current website, plus discoverability findings.
+---
 
-## Website plan
-| Doc | Covers |
+## Run it locally
+
+```bash
+python3 -m http.server 8899      # then open http://localhost:8899
+```
+
+Any static server works. Don't open `index.html` straight off the disk —
+the asset paths are absolute (`/assets/...`), so it needs to be served.
+
+## Deploy
+
+Drag the repository into **Netlify**, **Cloudflare Pages**, **Vercel** or
+**GitHub Pages**. There is nothing to configure: no build command, no output
+directory, no environment variables. Point the domain at it and it's live.
+
+---
+
+## Editing it
+
+| What | Where |
 |---|---|
-| [`00-strategy.md`](docs/plan/00-strategy.md) | Positioning, audiences, what we take from the Fitnix reference and what we change |
-| [`01-design-system.md`](docs/plan/01-design-system.md) | Palette, typography, layout, motion, photography direction |
-| [`02-copy-deck.md`](docs/plan/02-copy-deck.md) | Every string: homepage, programmes, pricing, contact, metadata |
-| [`03-component-architecture.md`](docs/plan/03-component-architecture.md) | Routes, components, Tailwind v4 theme, class recipes, types, a11y |
-| [`04-interactions.md`](docs/plan/04-interactions.md) | Pricing toggle, mobile nav, map facade, gallery, enquiry composer, exclusions |
-| [`05-stack-seo-roadmap.md`](docs/plan/05-stack-seo-roadmap.md) | Stack, performance budget, local SEO, phases, risks |
-| [`06-static-build-decision.md`](docs/plan/06-static-build-decision.md) | **Static-only decision** and the WhatsApp / email contact model |
-| [`OPEN-QUESTIONS.md`](docs/plan/OPEN-QUESTIONS.md) | 21 items awaiting the client — the build's blocking list |
+| **Phone number** | `index.html` — search `+961 3 402 413` and `tel:+9613402413` |
+| **Email** | `index.html` — search `train@themetalclinic.com` |
+| **Opening hours** | `index.html`, the `.hours` block **and** the `openingHoursSpecification` in the JSON-LD at the top |
+| **Street address** | `index.html` — search `TODO-ADDRESS` |
+| **All page text** | `index.html` — it reads top to bottom in the order it appears on screen |
+| **Colours, type, spacing** | `assets/css/main.css` — section 2, `:root` |
+| **Photos** | see `assets/img/README.md` |
 
-## Design blueprint (visual preview)
-Published artifact showing the real palette and type with working demos of the
-pricing toggle, programmes accordion and mobile nav:
-<https://claude.ai/code/artifact/568c2da9-56cf-4671-9f7e-e8130cbd9d49>
+### Turning WhatsApp on
 
-*Client has feedback on this pending — do not iterate on it until they send it.*
+The number hasn't been confirmed as a WhatsApp line, so every button currently
+dials it. When confirmed, open `assets/js/main.js` and set:
 
-## Conventions used throughout
-- `[CONFIRM: …]` marks a fact not yet known. It is never invented.
-- `$[XX]` marks a price that must come from the client.
-- No statistic, review count or testimonial anywhere in this plan is fabricated.
+```js
+var WHATSAPP = true;
+```
+
+Every "Call" link becomes a WhatsApp chat with a prefilled message. Nothing else
+needs touching.
+
+---
+
+## What's on the page
+
+Hero · About Alain · How it works (assess → prescribe → execute → review) ·
+Programs accordion (Transformation, One-to-one, Nutrition, Online) · Why people
+stay · Three stat cards · Pricing (no figures — each card asks you to get in
+touch) · Contact with map and live open/closed status · Closing call to action ·
+Footer.
+
+**Interactive bits:** sticky header, mobile menu, programme accordion, sticky
+call/email bar on phones, and an open/closed pill computed against Beirut time
+from the hours in the markup. That's all of it.
+
+### Still to do
+- Real photographs (`assets/img/README.md` lists the twelve shots)
+- Confirm hours, address and whether the number takes WhatsApp
+- `assets/img/og.jpg` for social sharing
+- Google Business Profile and the Lebanese directory listings — see
+  `docs/plan/05-stack-seo-roadmap.md`; this matters more for being found than
+  the site itself does
+
+---
+
+## Research and planning
+
+- [`docs/research/`](docs/research) — business profile and digital-presence audit
+- [`docs/plan/`](docs/plan) — strategy, design system, copy deck, architecture,
+  interactions, static-build decision, and the open-questions tracker
+- [`docs/mockups/`](docs/mockups) — the original design mockup and rendered screenshots
