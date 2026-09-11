@@ -1,7 +1,7 @@
 # Open Questions — awaiting client
 
 Everything the plan needs from Alain / the client before a build can start.
-**Status: awaiting answers (client said they'd send these later).**
+**Status: partly answered 11 Sep 2026 — answers filled in below and applied to the site.**
 
 Fill the "Answer" column in place; the linked documents each carry a matching
 `[CONFIRM: …]` marker at the point of use.
@@ -11,16 +11,16 @@ Fill the "Answer" column in place; the linked documents each carry a matching
 | # | Question | Answer | Used in |
 |---|---|---|---|
 | 1 | Coaching studio, open-floor gym, or both? | | `00-strategy.md §1`, pricing tiers |
-| 2 | Exact street address, building, floor + a **landmark** line | | copy deck, contact page, schema, all SEO |
-| 3 | Town name (the Maps pin reads as Mazraat Yachouh / Beit el Chaar / Bsalim) | | every page title and H1 |
-| 4 | Opening hours, per day | | contact page, open/closed pill, schema |
-| 5 | Real prices + package structure for every tier | | `02-copy-deck.md` pricing, all `$[XX]` |
+| 2 | Exact street address, building, floor + a **landmark** line | **Starbucks building, Main Street, Rabieh** ✅ | copy deck, contact page, schema, all SEO |
+| 3 | Town name | **Rabieh** ✅ — every "Metn" on the site replaced | every page title and H1 |
+| 4 | Opening hours, per day | **Mon–Fri 08:00–22:00, Sat & Sun closed** ✅ | contact page, open/closed pill, schema |
+| 5 | Real prices + package structure | **Not published — pricing buttons open WhatsApp / Instagram instead** ✅ | `02-copy-deck.md` pricing, all `$[XX]` |
 
 ## Blocking — content can't be written without these
 
 | # | Question | Answer | Used in |
 |---|---|---|---|
-| 6 | Is **+961 3 402 413** on WhatsApp? | | the entire contact path — if no, the sticky bar, FAB and composer all change |
+| 6 | Is the number on WhatsApp? | Assumed yes, links built. **Still needs a real-phone test.** ⚠️ | the entire contact path — if no, the sticky bar, FAB and composer all change |
 | 7 | Client testimonials: do you have **written consent** and before/after photos? | | case files section; without consent it doesn't ship |
 | 8 | Real numbers for the stat band: clients coached, combined kg lost, years | | homepage stat band |
 | 9 | Google rating + review count (couldn't be read from the listing) | | hero rating chip — omitted entirely until ≥10 real reviews |
@@ -30,7 +30,7 @@ Fill the "Answer" column in place; the linked documents each carry a matching
 
 | # | Question | Answer | Used in |
 |---|---|---|---|
-| 11 | Who controls `themetalclinic.com` + DNS? | | cutover |
+| 11 | Who controls `themetalclinic.com` + DNS? | Unknown / nobody actively. Hosting: **Vercel** ✅ | cutover |
 | 12 | Replacing the existing site? (If so **preserve the current Terms of Service** — the only legal text published) | | launch plan |
 | 13 | Payment methods accepted (cash USD / OMT / transfer / card) | | pricing FAQ |
 | 14 | Commitment / cancellation / freeze terms | | pricing FAQ, FAQ #7 |
@@ -43,6 +43,6 @@ Fill the "Answer" column in place; the linked documents each carry a matching
 
 | # | Item | Status |
 |---|---|---|
-| 19 | Photo shoot — 10-shot list in `02-copy-deck.md` (gallery section) | **Not started. Blocks the build; the design dies on stock photos.** |
+| 19 | Photo shoot — shot list in `assets/img/README.md` | Client to supply next. **Only remaining blocker.** |
 | 20 | Logo / wordmark files (vector) | |
 | 21 | Exterior + signage photo (doubles as the "how do I find you" shot) | |

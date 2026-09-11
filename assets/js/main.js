@@ -4,24 +4,6 @@
 (function () {
   'use strict';
 
-  /* ------------------------------------------------------------------
-     WHATSAPP — currently OFF, because we haven't confirmed the number is
-     on WhatsApp. Set this to true once it is, and every "Call" button
-     becomes a WhatsApp chat with a prefilled message instead.
-     ------------------------------------------------------------------ */
-  var WHATSAPP = false;
-  var PHONE_INTL = '9613402413';                       // no +, no spaces
-  var WA_TEXT = "Hi Alain — I'd like to book an assessment.";
-
-  if (WHATSAPP) {
-    var waHref = 'https://wa.me/' + PHONE_INTL + '?text=' + encodeURIComponent(WA_TEXT);
-    document.querySelectorAll('a[href^="tel:"]').forEach(function (a) {
-      a.href = waHref;
-      a.target = '_blank';
-      a.rel = 'noopener';
-    });
-  }
-
   /* ---------- header scroll state ---------- */
   var hdr = document.getElementById('hdr');
   var onScroll = function () {
