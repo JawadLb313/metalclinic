@@ -81,17 +81,13 @@
 <header class="hdr" id="hdr">
   <div class="wrap nav">
     <a class="logo" href="/" aria-label="The Metal Clinic — home">
-      <svg class="glyph" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-        <rect x="1" y="1" width="38" height="38" stroke="#FF5A1F" stroke-width="1.5"/>
-        <path d="M8 16v8M12 13v14M28 13v14M32 16v8" stroke="#F5F6F8" stroke-width="2.4" stroke-linecap="round"/>
-        <path d="M12 20h16" stroke="#FF5A1F" stroke-width="2.4" stroke-linecap="round"/>
-      </svg>
-      <span class="wm">The Metal Clinic<i>.</i><small>Est. 2020</small></span>
+      <img class="logoimg" src="/assets/img/logo.webp" alt="The Metal Clinic" width="561" height="240">
     </a>
     <nav class="links" aria-label="Main">
       <a href="#about">About</a>
       <a href="#how">How it works</a>
       <a href="#programs">Programs</a>
+      <a href="#results">Results</a>
       <a href="#pricing">Pricing</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -107,8 +103,9 @@
   <a class="ml" href="#about"><small>01</small>About</a>
   <a class="ml" href="#how"><small>02</small>How it works</a>
   <a class="ml" href="#programs"><small>03</small>Programs</a>
-  <a class="ml" href="#pricing"><small>04</small>Pricing</a>
-  <a class="ml" href="#contact"><small>05</small>Contact</a>
+  <a class="ml" href="#results"><small>04</small>Results</a>
+  <a class="ml" href="#pricing"><small>05</small>Pricing</a>
+  <a class="ml" href="#contact"><small>06</small>Contact</a>
   <div class="mfoot">
     <a class="btn" href="tel:+9613402413"><svg><use href="#i-phone"/></svg>Call 03 402 413</a>
     <a class="btn ghost" href="https://wa.me/9613402413?text=Hi%20Alain%20%E2%80%94%20I%27d%20like%20to%20book%20an%20assessment." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a>
@@ -123,12 +120,16 @@
 
 <!-- ============ hero ============ -->
 <section class="hero">
-  <div class="heroimg ph warm ph--hero"><span class="tag" style="left:auto;right:20px;top:auto;bottom:20px">Photo — coaching a client mid-set</span></div>
+  <div class="heroimg"><img src="/assets/img/coach.webp" alt="Alain Eid, head coach at The Metal Clinic" width="735" height="997" fetchpriority="high"></div>
   <div class="wrap heroin">
     <p class="creds"><b aria-hidden="true">★</b> ACSM Certified <span>·</span> Precision Nutrition Pn1 <span>·</span> Rabieh, Lebanon</p>
     <h1 class="big">Strength is a <em>prescription.</em></h1>
     <div class="herofoot">
-      <div class="hcard ph cool ph--video"><span class="play"><svg viewBox="0 0 24 24"><use href="#i-play"/></svg></span></div>
+      <a class="hcard" href="https://www.instagram.com/p/DaxjQxGo6iD/" target="_blank" rel="noopener" data-ig="DaxjQxGo6iD" aria-label="Watch the video">
+        <img src="/assets/img/video-thumb.webp" alt="" width="676" height="380" loading="lazy">
+        <span class="play"><svg viewBox="0 0 24 24"><use href="#i-play"/></svg></span>
+        <span class="watch">Watch</span>
+      </a>
       <div class="hmeta">
         <div class="n">6 YRS</div>
         <div class="t">Coaching out of one room in Rabieh</div>
@@ -145,7 +146,10 @@
 <!-- ============ about ============ -->
 <section class="about" id="about">
   <div class="wrap aboutgrid">
-    <div class="ph cool ph--coach"><span class="tag">Photo — Alain, portrait</span></div>
+    <div class="ba ba--tall">
+      <figure><img src="/assets/img/alain-before.webp" alt="Alain Eid before losing 100 pounds" width="555" height="868" loading="lazy"><figcaption>Before</figcaption></figure>
+      <figure><img src="/assets/img/alain-after.webp" alt="Alain Eid today, in the gym" width="602" height="904" loading="lazy"><figcaption>After</figcaption></figure>
+    </div>
     <div>
       <p class="eyebrow"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-star"/></svg> About the clinic</p>
       <h2>Built by someone who needed it first</h2>
@@ -183,14 +187,17 @@
     <div class="chead">
       <p class="eyebrow"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-star"/></svg> What we run</p>
       <h2>The programs</h2>
-      <p>Four ways in. The same standard behind all of them.</p>
+      <p>Five ways in. The same standard behind all of them.</p>
     </div>
     <div class="acc" id="acc">
 
       <div class="item open">
         <button class="row" aria-expanded="true" aria-controls="p1"><span class="n">01</span><span class="t">Transformation Protocol</span><span class="pm" aria-hidden="true">+</span></button>
         <div class="panel" id="p1"><div><div class="body">
-          <div class="ph warm ph--p1"><span class="tag">Photo — kettlebell squat</span></div>
+          <div class="ba ba--prog">
+            <figure><img src="/assets/img/client-1-before.webp" alt="Client before the programme" width="401" height="348" loading="lazy"><figcaption>Before</figcaption></figure>
+            <figure><img src="/assets/img/client-1-after.webp" alt="The same client after" width="396" height="348" loading="lazy"><figcaption>After</figcaption></figure>
+          </div>
           <div>
             <p>Twelve weeks, structured and time-bound. Training, nutrition and weekly accountability in one block, built for people who want a decision made for them.</p>
             <ul class="ticks">
@@ -206,7 +213,7 @@
       <div class="item">
         <button class="row" aria-expanded="false" aria-controls="p2"><span class="n">02</span><span class="t">One-to-One Personal Training</span><span class="pm" aria-hidden="true">+</span></button>
         <div class="panel" id="p2"><div><div class="body">
-          <div class="ph ph--p2"><span class="tag">Photo — coaching a lift</span></div>
+          <div class="ph ph--p2"></div>
           <div>
             <p>Private sessions, entirely your programme. The fastest way to fix technique, because someone is watching every rep.</p>
             <ul class="ticks">
@@ -220,9 +227,25 @@
       </div>
 
       <div class="item">
-        <button class="row" aria-expanded="false" aria-controls="p3"><span class="n">03</span><span class="t">Nutrition Coaching</span><span class="pm" aria-hidden="true">+</span></button>
+        <button class="row" aria-expanded="false" aria-controls="p5"><span class="n">03</span><span class="t">Small-Group Personal Training</span><span class="pm" aria-hidden="true">+</span></button>
+        <div class="panel" id="p5"><div><div class="body">
+          <div class="photo"><img src="/assets/img/smallgroup.webp" alt="Client doing a barbell hip thrust in a small-group session" width="676" height="848" loading="lazy"></div>
+          <div>
+            <p>The coaching of a private session at a lower price per session. A small group, one coach, and everyone on a proper programme.</p>
+            <ul class="ticks">
+              <li><svg><use href="#i-check"/></svg>Coached for the whole session — nobody trains unsupervised</li>
+              <li><svg><use href="#i-check"/></svg>Strength work with barbells and dumbbells</li>
+              <li><svg><use href="#i-check"/></svg>8 sessions for $120, or 12 sessions for $150</li>
+            </ul>
+            <p class="forwho"><b>For:</b> anyone who trains better with company, or wants coaching on a tighter budget.</p>
+          </div>
+        </div></div></div>
+      </div>
+
+      <div class="item">
+        <button class="row" aria-expanded="false" aria-controls="p3"><span class="n">04</span><span class="t">Nutrition Coaching</span><span class="pm" aria-hidden="true">+</span></button>
         <div class="panel" id="p3"><div><div class="body">
-          <div class="ph cool ph--p3"><span class="tag">Photo — real food, not supplements</span></div>
+          <div class="ph cool ph--p3"></div>
           <div>
             <p>Habit-based, Precision Nutrition method. No shakes, no detoxes, and no plan that assumes you don't eat with your family on Sunday.</p>
             <ul class="ticks">
@@ -236,9 +259,9 @@
       </div>
 
       <div class="item">
-        <button class="row" aria-expanded="false" aria-controls="p4"><span class="n">04</span><span class="t">Online Coaching</span><span class="pm" aria-hidden="true">+</span></button>
+        <button class="row" aria-expanded="false" aria-controls="p4"><span class="n">05</span><span class="t">Online Coaching</span><span class="pm" aria-hidden="true">+</span></button>
         <div class="panel" id="p4"><div><div class="body">
-          <div class="ph warm ph--p4"><span class="tag">Photo — phone with a written programme</span></div>
+          <div class="ph warm ph--p4"></div>
           <div>
             <p>The full protocol, delivered anywhere. Programming, video form review, and a coach who answers.</p>
             <ul class="ticks">
@@ -276,8 +299,38 @@
     <div class="stats">
       <div class="sc ph ph--stat1"><span class="tag">Photo — coach cueing a lift</span><p class="cap">One coach, watching every rep</p><p class="fig">1:1<small>No floor staff, no rotation</small></p></div>
       <div class="sc ph warm ph--stat2"><span class="tag">Photo — assessment in progress</span><p class="cap">Re-measured on a fixed schedule</p><p class="fig">4<small>Weeks between reviews</small></p></div>
-      <div class="sc ph cool ph--stat3"><span class="tag">Photo — the coach, before &amp; now</span><p class="cap">Lost by the coach, before he coached anyone</p><p class="fig">100<small>Pounds</small></p></div>
+      <div class="sc ph cool"><img class="scimg" src="/assets/img/alain-after.webp" alt="" width="602" height="904" loading="lazy"><p class="cap">Lost by the coach, before he coached anyone</p><p class="fig">100<small>Pounds</small></p></div>
     </div>
+  </div>
+</section>
+
+<!-- ============ results ============ -->
+<section class="results" id="results">
+  <div class="wrap">
+    <div class="chead">
+      <p class="eyebrow"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-star"/></svg> Results</p>
+      <h2>The work shows</h2>
+      <p>Real clients of The Metal Clinic. Same coach, same method — their own effort.</p>
+    </div>
+    <div class="rgrid">
+      <div class="ba ba--result">
+        <figure><img src="/assets/img/client-1-before.webp" alt="Client 1, before" loading="lazy"><figcaption>Before</figcaption></figure>
+        <figure><img src="/assets/img/client-1-after.webp" alt="Client 1, after" loading="lazy"><figcaption>After</figcaption></figure>
+      </div>
+      <div class="ba ba--result">
+        <figure><img src="/assets/img/client-2-before.webp" alt="Client 2, before" loading="lazy"><figcaption>Before</figcaption></figure>
+        <figure><img src="/assets/img/client-2-after.webp" alt="Client 2, after" loading="lazy"><figcaption>After</figcaption></figure>
+      </div>
+      <div class="ba ba--result">
+        <figure><img src="/assets/img/client-3-before.webp" alt="Client 3, before" loading="lazy"><figcaption>Before</figcaption></figure>
+        <figure><img src="/assets/img/client-3-after.webp" alt="Client 3, after" loading="lazy"><figcaption>After</figcaption></figure>
+      </div>
+      <div class="ba ba--result">
+        <figure><img src="/assets/img/client-4-before.webp" alt="Client 4, before" loading="lazy"><figcaption>Before</figcaption></figure>
+        <figure><img src="/assets/img/client-4-after.webp" alt="Client 4, after" loading="lazy"><figcaption>After</figcaption></figure>
+      </div>
+    </div>
+    <div class="rcta"><a class="btn" href="https://wa.me/9613402413?text=Hi%20Alain%20%E2%80%94%20I%27d%20like%20to%20start%20my%20own%20transformation." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Start yours</a></div>
   </div>
 </section>
 
@@ -301,7 +354,7 @@
         <a class="btn ghost" href="https://wa.me/9613402413?text=Hi%20Alain%20%E2%80%94%20what%20does%20one-to-one%20personal%20training%20cost%3F" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Ask on WhatsApp</a>
       </div>
       <div class="tier feat">
-        <span class="flag">Most chosen</span>
+        <span class="flag">Flagship</span>
         <p class="nm">Transformation</p>
         <p class="ds">Twelve weeks. Training, nutrition and weekly accountability in one block — the full protocol, start to finish.</p>
         <ul>
@@ -311,6 +364,20 @@
           <li><svg><use href="#i-check"/></svg>Direct access between sessions</li>
         </ul>
         <a class="btn" href="https://wa.me/9613402413?text=Hi%20Alain%20%E2%80%94%20what%20does%20the%2012-week%20Transformation%20cost%3F" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Ask on WhatsApp</a>
+      </div>
+      <div class="tier">
+        <p class="nm">Small Group</p>
+        <p class="ds">Coached the whole session, in a small group. The same standard at a lower price per session.</p>
+        <div class="prices">
+          <div><b>$120</b><span>8 sessions</span></div>
+          <div><b>$150</b><span>12 sessions</span></div>
+        </div>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Coached every session</li>
+          <li><svg><use href="#i-check"/></svg>Barbell and dumbbell strength work</li>
+          <li><svg><use href="#i-check"/></svg>Best price per session</li>
+        </ul>
+        <a class="btn ghost" href="https://wa.me/9613402413?text=Hi%20Alain%20%E2%80%94%20I%27d%20like%20to%20book%20small-group%20PT." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Book on WhatsApp</a>
       </div>
       <div class="tier">
         <p class="nm">Online</p>
@@ -323,7 +390,7 @@
         <a class="btn ghost" href="https://wa.me/9613402413?text=Hi%20Alain%20%E2%80%94%20what%20does%20online%20coaching%20cost%3F" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Ask on WhatsApp</a>
       </div>
     </div>
-    <p class="pricenote">Nutrition coaching available on its own · Prefer Instagram? <a href="https://www.instagram.com/themetalclinic/" target="_blank" rel="noopener" style="color:var(--ember)">DM @themetalclinic</a></p>
+    <p class="pricenote">Nutrition coaching available on its own · Prefer Instagram? <a href="https://www.instagram.com/themetalclinic/" target="_blank" rel="noopener" style="color:var(--brand)">DM @themetalclinic</a></p>
   </div>
 </section>
 
@@ -380,14 +447,9 @@
     <div class="fgrid">
       <div class="fcol">
         <a class="logo" href="/" aria-label="The Metal Clinic — home">
-          <svg class="glyph" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-            <rect x="1" y="1" width="38" height="38" stroke="#FF5A1F" stroke-width="1.5"/>
-            <path d="M8 16v8M12 13v14M28 13v14M32 16v8" stroke="#F5F6F8" stroke-width="2.4" stroke-linecap="round"/>
-            <path d="M12 20h16" stroke="#FF5A1F" stroke-width="2.4" stroke-linecap="round"/>
-          </svg>
-          <span class="wm">The Metal Clinic<i>.</i><small>Est. 2020</small></span>
-        </a>
-        <p class="fbio">Assessment-led coaching gym in Rabieh, Mount Lebanon. Personal training, nutrition and online coaching by Alain Eid — ACSM certified.</p>
+      <img class="logoimg" src="/assets/img/logo.webp" alt="The Metal Clinic" width="561" height="240">
+    </a>
+        <p class="fbio"><b class="tagline">Hybrid coaching. Fitness. Nutrition.</b>Assessment-led coaching gym in Rabieh, Mount Lebanon. Personal training, nutrition and online coaching by Alain Eid — ACSM certified.</p>
         <div class="soc">
           <a href="https://www.instagram.com/themetalclinic/" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
           <a href="https://www.facebook.com/themetalclinic/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="solid"><use href="#i-fb"/></svg></a>
@@ -396,9 +458,9 @@
         </div>
       </div>
       <div class="fcol"><h5>Train</h5>
-        <a href="#programs">Transformation</a><a href="#programs">One-to-one</a><a href="#programs">Nutrition coaching</a><a href="#programs">Online coaching</a></div>
+        <a href="#programs">Transformation</a><a href="#programs">One-to-one</a><a href="#programs">Small-group PT</a><a href="#programs">Nutrition coaching</a><a href="#programs">Online coaching</a></div>
       <div class="fcol"><h5>The clinic</h5>
-        <a href="#about">About Alain</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></div>
+        <a href="#about">About Alain</a><a href="#how">How it works</a><a href="#results">Results</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></div>
       <div class="fcol"><h5>Talk to us</h5>
         <a href="tel:+9613402413">03 402 413</a>
         <a href="tel:+9613402413">+961 3 402 413 <span style="color:var(--steel-dim)">(abroad)</span></a>
@@ -409,6 +471,14 @@
     <div class="fbot"><span>© <span id="yr">2026</span> The Metal Clinic</span><span>Iron, prescribed.</span></div>
   </div>
 </footer>
+
+<div class="vmodal" id="vmodal" role="dialog" aria-modal="true" aria-label="Video" hidden>
+  <div class="vbox">
+    <button class="vclose" id="vclose" aria-label="Close video">&times;</button>
+    <div class="vframe" id="vframe"></div>
+    <a class="vext" href="https://www.instagram.com/p/DaxjQxGo6iD/" target="_blank" rel="noopener">Open on Instagram →</a>
+  </div>
+</div>
 
 <div class="mbar">
   <a class="primary" href="https://wa.me/9613402413?text=Hi%20Alain%20%E2%80%94%20I%27d%20like%20to%20book%20an%20assessment." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a>

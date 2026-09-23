@@ -103,6 +103,43 @@
     } catch (err) { /* leave the pill hidden if anything is unsupported */ }
   }
 
+  /* ---------- Instagram video in a lightbox ----------
+     Any link with data-ig="<post id>" opens that post's player here instead
+     of leaving the site. Without JavaScript the link simply opens Instagram.
+     The player is only loaded on click, so it costs nothing on page load. */
+  var vm = document.getElementById('vmodal');
+  var vf = document.getElementById('vframe');
+  var vclose = document.getElementById('vclose');
+  var vOpener = null;
+
+  function openVideo(id, opener) {
+    vOpener = opener;
+    vf.innerHTML = '<iframe src="https://www.instagram.com/p/' + encodeURIComponent(id) +
+      '/embed/" title="The Metal Clinic on Instagram" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>';
+    vm.hidden = false;
+    document.body.classList.add('is-locked');
+    vclose.focus();
+  }
+  function closeVideo() {
+    vf.innerHTML = '';                 // removing the iframe stops playback
+    vm.hidden = true;
+    document.body.classList.remove('is-locked');
+    if (vOpener) vOpener.focus();
+  }
+  if (vm && vf && vclose) {
+    document.querySelectorAll('[data-ig]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        openVideo(a.getAttribute('data-ig'), a);
+      });
+    });
+    vclose.addEventListener('click', closeVideo);
+    vm.addEventListener('click', function (e) { if (e.target === vm) closeVideo(); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !vm.hidden) closeVideo();
+    });
+  }
+
   /* ---------- footer year ---------- */
   var yr = document.getElementById('yr');
   if (yr) yr.textContent = new Date().getFullYear();

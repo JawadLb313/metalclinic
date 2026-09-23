@@ -54,17 +54,29 @@ JSON-LD block in `index.html`.
 ## What's on the page
 
 Hero · About Alain · How it works (assess → prescribe → execute → review) ·
-Programs accordion (Transformation, One-to-one, Nutrition, Online) · Why people
-stay · Three stat cards · Pricing (no figures — each card opens WhatsApp with a
+Programs accordion (Transformation, One-to-one, Small group, Nutrition, Online) ·
+Why people stay · Three stat cards · Results (client before/afters) · Pricing (no figures — each card opens WhatsApp with a
 question about that package) · Contact with map and live open/closed status ·
 Closing call to action · Footer.
 
 **Interactive bits:** sticky header, mobile menu, programme accordion, sticky
-call/email bar on phones, and an open/closed pill computed against Beirut time
-from the hours in the markup. That's all of it.
+WhatsApp/call bar on phones, an open/closed pill computed against Beirut time
+from the hours in the markup, and an Instagram video that plays in a lightbox.
+
+### The video
+The hero "Watch" card plays Instagram post `DaxjQxGo6iD` in a lightbox. To
+change it, edit the `data-ig` attribute and the `href` on `.hcard` in
+`index.html` (and the "Open on Instagram" link in the `#vmodal` block).
+Instagram's player does not autoplay; for an autoplaying loop, add the `.mp4`
+to `assets/` and replace the embed with a `<video autoplay muted loop playsinline>`.
+
+### Brand colour
+The accent is the Instagram brand red: `--brand` (#FF3B3B) for text and lines
+on black, `--brand-fill` (#D11F1F) behind white text on buttons and labels.
+Both are in `assets/css/main.css`, section 2.
 
 ### Still to do
-- Real photographs (`assets/img/README.md` lists the shots)
+- Six remaining photos, and sharper originals of the Instagram ones (`assets/img/README.md`)
 - `assets/img/og.jpg` — 1200×630 social share image
 - Check the WhatsApp link opens a real chat
 - Terms of Service and Privacy pages

@@ -1,30 +1,33 @@
 # Photos
 
-Every image on the site is currently a dark placeholder plate with a caption
-naming the shot it needs. To swap in a real photo:
+## In use
 
-1. Drop the file in this folder using the filename below.
-2. Open `assets/css/main.css`, scroll to **section 16 — PHOTO SLOTS**, and
-   uncomment the matching line.
-3. In `index.html`, add the class `done` to that element (e.g.
-   `class="ph warm ph--hero done"`) to hide the placeholder caption.
+| File | Where | Source |
+|---|---|---|
+| `logo.webp` | Header, footer | Cut out of the red Instagram graphic |
+| `coach.webp` | Hero, right side (desktop only) | Still from a talking-to-camera video, caption cropped off. **Replace with the bench-press shot.** |
+| `video-thumb.webp` | Hero "Watch" card | Crop of the small-group hip-thrust post |
+| `alain-before.webp` / `alain-after.webp` | About section; "100 lb" stat card | Instagram before/after graphic |
+| `smallgroup.webp` | Small-group programme | Hip-thrust post, price overlay cropped off |
+| `client-1…4-before/after.webp` | Results section; client 1 also in the Transformation programme | Client collage |
 
-Aim for **1600px wide**, `.jpg` or `.webp`, **under 300 KB** each.
+All photos were graded to one look (slightly lower saturation, a touch more
+contrast) and upscaled with sharpening. Most came from Instagram screenshots, so
+**originals straight from the phone will look noticeably sharper** — send them
+and they drop in under the same filenames.
 
-| Filename | Shot |
-|---|---|
-| `hero.jpg` | Alain coaching a client mid-set. Hard side light, dark background. The most important photo on the site. |
-| `coach-portrait.jpg` | Alain, portrait, arms crossed, not smiling. |
-| `the-room.jpg` | The gym floor — rack, barbell, plates. Lights on, no people. |
-| `program-transformation.jpg` | Kettlebell or barbell work, low key. |
-| `program-personal.jpg` | Hands-on coaching — Alain's hands on the bar. |
-| `program-nutrition.jpg` | Real food, not supplements. |
-| `program-online.jpg` | A phone showing a written programme. |
-| `stat-coaching.jpg` | Coach cueing a lift. |
-| `stat-assessment.jpg` | Assessment in progress — tape measure, notes. |
-| `stat-transformation.jpg` | The coach, before and now. |
-| `video-thumb.jpg` | Still for the small hero video card. |
-| `og.jpg` | 1200×630 social share image — wordmark on dark. |
+## Still placeholders
 
-**Do not use stock gym photography.** A local prospect will recognise that the
-room in the photo isn't the room they'd be walking into.
+| Slot | CSS hook | Wanted |
+|---|---|---|
+| One-to-one programme | `.ph--p2` | Alain spotting or correcting a client's form, close-up |
+| Nutrition programme | `.ph--p3` | Real food — a plate or a meal-prep box |
+| Online programme | `.ph--p4` | A phone showing a workout, gym blurred behind |
+| "Why people stay" | `.ph--room` | The gym, empty, wide shot |
+| Stat card "one coach" | `.ph--stat1` | Alain watching a client's rep |
+| Stat card "re-measured" | `.ph--stat2` | Tape measure / assessment moment |
+
+To fill one: drop the file here, then in `index.html` replace the placeholder
+`<div class="ph …"></div>` with
+`<div class="photo"><img src="/assets/img/FILE.webp" alt="…"></div>`
+(or uncomment the matching line in section 16 of `assets/css/main.css`).
