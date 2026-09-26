@@ -4,15 +4,16 @@
 
 | File | Where | Source |
 |---|---|---|
-| `logo.webp` | Header, footer | Cut out of the red Instagram graphic |
-| `coach.webp` | Hero, right side (desktop only) | Still from a talking-to-camera video, caption cropped off. **Replace with the bench-press shot.** |
-| `video-thumb.webp` | Hero "Watch" card | Crop of the small-group hip-thrust post |
+| `logo.webp` | Header, footer | Cut out of the red Instagram graphic, AI-upscaled 4× for clean edges |
+| `hero.webp` / `hero-m.webp` | Hero — desktop crop / phone crop | Small-group hip-thrust post, AI-upscaled 4× (Real-ESRGAN). **Swap for the bench-press shot when it arrives.** |
 | `alain-before.webp` / `alain-after.webp` | About section; "100 lb" stat card | Instagram before/after graphic |
-| `smallgroup.webp` | Small-group programme | Hip-thrust post, price overlay cropped off |
+| `smallgroup.webp` | Small-group programme | Same upscaled hip-thrust photo, tighter crop |
 | `client-1…4-before/after.webp` | Results section; client 1 also in the Transformation programme | Client collage |
 
 All photos were graded to one look (slightly lower saturation, a touch more
-contrast) and upscaled with sharpening. Most came from Instagram screenshots, so
+contrast). The hero and logo were AI-upscaled. **The before/after photos were
+deliberately not AI-enhanced** — they're proof of results, so they stay exactly
+as the camera took them, only resized. Most came from Instagram screenshots, so
 **originals straight from the phone will look noticeably sharper** — send them
 and they drop in under the same filenames.
 
