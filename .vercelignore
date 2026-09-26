@@ -1,0 +1,4 @@
+# Internal files — never publish these on the live site
+docs
+README.md
+assets/img/README.md
