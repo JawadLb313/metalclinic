@@ -21,7 +21,7 @@ and they drop in under the same filenames.
 
 | Slot | CSS hook | Wanted |
 |---|---|---|
-| ~~One-to-one programme~~ | — | Filled: `coach-alain.webp` (caption cropped off, AI-upscaled) |
+| ~~One-to-one programme~~ | — | Filled: `coach-alain.webp` — full photo, caption removed with LaMa inpainting, AI-upscaled 4× |
 | Nutrition programme | `.ph--p3` | Real food — a plate or a meal-prep box |
 | Online programme | `.ph--p4` | A phone showing a workout, gym blurred behind |
 | "Why people stay" | `.ph--room` | The gym, empty, wide shot |
