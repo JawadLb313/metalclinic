@@ -5,7 +5,7 @@
 | File | Where | Source |
 |---|---|---|
 | `logo.webp` | Header, footer | Cut out of the red Instagram graphic, AI-upscaled 4× for clean edges |
-| `hero.webp` / `hero-m.webp` | Hero — desktop crop / phone crop | Small-group hip-thrust post, AI-upscaled 4× (Real-ESRGAN). **Swap for the bench-press shot when it arrives.** |
+| — | Hero | **Empty on purpose** until the bench-press shot arrives. The hip-thrust photo was taken out of the hero; it stays in the small-group section. |
 | `alain-before.webp` / `alain-after.webp` | About section; "100 lb" stat card | Instagram before/after graphic |
 | `smallgroup.webp` | Small-group programme | Same upscaled hip-thrust photo, tighter crop |
 | `client-1…4-before/after.webp` | Results section; client 1 also in the Transformation programme | Client collage |
