@@ -192,6 +192,7 @@ h1.big em{font-style:normal;color:var(--brand)}
 .body .ph,.body .photo,.ba--prog{height:220px}
 .body .photo{overflow:hidden;background:var(--ink-850)}
 .body .photo img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.body .photo--coach img{object-position:50% 18%}   /* keep his face in frame on wide, short panels */
 .body p{font-size:15.5px;line-height:1.65;max-width:52ch}
 .ticks{margin-top:20px;display:flex;flex-direction:column;gap:11px}
 .ticks li{display:flex;gap:11px;align-items:flex-start;font-size:15px;color:#D4D9E0}

@@ -45,7 +45,7 @@ others are thin.
 - **Eyebrow:** `THE CLINIC`
 - **H2:** `BUILT BY SOMEONE WHO NEEDED IT FIRST`
 - **Body:**
-  "Alain Eid spent eleven years behind a desk in banking. In 2006 a doctor told him his weight had become a health risk. He lost a hundred pounds — and then spent the next decade learning exactly how it had happened, so he could do it for other people on purpose.
+  "Alan Eid spent eleven years behind a desk in banking. In 2006 a doctor told him his weight had become a health risk. He lost a hundred pounds — and then spent the next decade learning exactly how it had happened, so he could do it for other people on purpose.
   He left banking in 2018, studied fitness and nutrition at the American Fitness and Nutrition Academy in Pasadena, passed the Elite Fitness Certification at the American College of Sports Medicine, and opened The Metal Clinic in September 2020.
   Which is a long way of saying: he has read your file before. He has *been* your file."
 - **Pull quote:** `"There was no shortcut for me. There isn't one for you either — but you won't be doing it alone."`
@@ -126,11 +126,11 @@ others are thin.
   1. Wide of the room, lights on, empty — establishes the space
   2. Rack and barbell, hard side light
   3. Dumbbell wall / plate tree
-  4. Alain coaching a real client mid-set (hands on the bar)
+  4. Alan coaching a real client mid-set (hands on the bar)
   5. Two more coaching moments, different clients, different lifts
   6. A group session
   7. Assessment in progress — tape measure, clipboard/tablet
-  8. Alain, portrait, arms crossed, not smiling
+  8. Alan, portrait, arms crossed, not smiling
   9. Detail shots: chalk, knurling, a written programme on paper
   10. Exterior + entrance **with signage** (doubles as the "how do I find you" photo)
 

@@ -18,7 +18,7 @@ Stack: **Next.js 15 (App Router, static export) · TypeScript · Tailwind CSS v4
 - **Motion** — `<3kb` for what we need. Only imported in the two components that animate.
 - **No CMS at v1.** Content is typed TS in `/content`. A gym's copy changes four
   times a year; a CMS is a subscription and an attack surface for no benefit.
-  If Alain wants to edit himself later, add Sanity or Payload in phase 2 —
+  If Alan wants to edit himself later, add Sanity or Payload in phase 2 —
   the `/content` files are already shaped like a schema, so it's a lift, not a rewrite.
 
 ---

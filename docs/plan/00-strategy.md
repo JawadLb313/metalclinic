@@ -11,7 +11,7 @@ Fitnix is a **big-box gym** brand. Its whole copy engine runs on scale numbers:
 `4.8/5 verified reviews`, `12+ years experience`.
 
 The Metal Clinic, based on the research in `docs/research/business-profile.md`, is a
-**coach-led studio** — founded 2020 by Alain Eid, ~910 Instagram followers, one
+**coach-led studio** — founded 2020 by Alan Eid, ~910 Instagram followers, one
 named coach, and a website that talks about screening clients "on our premises."
 
 If we pour Metal Clinic content into the Fitnix mould, the first thing a visitor
@@ -63,12 +63,12 @@ a bio detail into the product.
 
 ## 3. The founder story is the hero asset
 
-Do not bury it in an About section. Alain Eid: **11 years in banking**, told by
+Do not bury it in an About section. Alan Eid: **11 years in banking**, told by
 doctors in 2006 that his weight was a health risk, **lost 100 lbs**, left banking
 in 2018, trained at AFNA Pasadena, passed the **ACSM Elite Fitness Certification**,
 founded The Metal Clinic in **September 2020**.
 
-The target customer *is* pre-2006 Alain. That is the single strongest piece of
+The target customer *is* pre-2006 Alan. That is the single strongest piece of
 copy available and it costs nothing — it's already true.
 
 ---
@@ -131,5 +131,5 @@ copy available and it costs nothing — it's already true.
 4. Do you have permission + photos for before/after client results?
 5. Is +961 3 402 413 a WhatsApp number?
 6. Arabic at launch, or English-only v1?
-7. Any other coaches, or is this Alain solo? (Changes the whole "Team" section.)
+7. Any other coaches, or is this Alan solo? (Changes the whole "Team" section.)
 8. Domain: keep `themetalclinic.com` and replace the current site?

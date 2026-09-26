@@ -17,7 +17,7 @@ CSS and a small amount of client-side JavaScript, deployable to any static host.
 - **Email** — `mailto:info@themetalclinic.com?subject=…&body=…`
 
 Nothing is posted anywhere. The visitor's own app sends the message, which means
-their name is already attached, the thread lives in a place Alain already checks,
+their name is already attached, the thread lives in a place Alan already checks,
 and he can reply from his phone in one tap.
 
 ---
@@ -40,7 +40,7 @@ and he can reply from his phone in one tap.
    Pages, Vercel — all equivalent. No lock-in.
 
 **What we give up, stated honestly:** no lead database, no server-side analytics,
-no automated follow-up, and no record of an enquiry unless Alain keeps the chat.
+no automated follow-up, and no record of an enquiry unless Alan keeps the chat.
 For a coaching studio at this scale, that is the correct trade. If lead volume
 ever justifies a CRM, the enquiry composer described below already collects the
 exact fields a form would have collected — it just hands them to WhatsApp instead
@@ -62,7 +62,7 @@ sense of being taken seriously, zero backend.
 
 **Composed message**
 ```
-Hi Alain — I'd like to book an assessment.
+Hi Alan — I'd like to book an assessment.
 
 Name: Karim
 Interested in: Transformation Protocol

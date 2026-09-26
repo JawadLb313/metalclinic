@@ -1,6 +1,6 @@
 # Open Questions — awaiting client
 
-Everything the plan needs from Alain / the client before a build can start.
+Everything the plan needs from Alan / the client before a build can start.
 **Status: partly answered 11 Sep 2026 — answers filled in below and applied to the site.**
 
 Fill the "Answer" column in place; the linked documents each carry a matching
@@ -24,7 +24,7 @@ Fill the "Answer" column in place; the linked documents each carry a matching
 | 7 | Client testimonials: do you have **written consent** and before/after photos? | | case files section; without consent it doesn't ship |
 | 8 | Real numbers for the stat band: clients coached, combined kg lost, years | | homepage stat band |
 | 9 | Google rating + review count (couldn't be read from the listing) | | hero rating chip — omitted entirely until ≥10 real reviews |
-| 10 | Any other coaches, or is this Alain solo? | | whether a Team section exists at all |
+| 10 | Any other coaches, or is this Alan solo? | | whether a Team section exists at all |
 
 ## Operational
 
