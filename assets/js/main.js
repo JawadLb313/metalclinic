@@ -140,6 +140,15 @@
     });
   }
 
+  /* ---------- years running: counted from the founding month, so it never goes stale ---------- */
+  var yrs = document.getElementById('yrs');
+  if (yrs) {
+    var since = yrs.getAttribute('data-since').split('-');   // "2020-09"
+    var now = new Date();
+    var n = now.getFullYear() - (+since[0]) - ((now.getMonth() + 1) < +since[1] ? 1 : 0);
+    if (n > 0) yrs.textContent = n;
+  }
+
   /* ---------- footer year ---------- */
   var yr = document.getElementById('yr');
   if (yr) yr.textContent = new Date().getFullYear();

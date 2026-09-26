@@ -25,7 +25,7 @@ and they drop in under the same filenames.
 | Nutrition programme | `.ph--p3` | Real food — a plate or a meal-prep box |
 | Online programme | `.ph--p4` | A phone showing a workout, gym blurred behind |
 | "Why people stay" | `.ph--room` | The gym, empty, wide shot |
-| Stat card "one coach" | `.ph--stat1` | Alain watching a client's rep |
+| Stat card "4 certifications" | `.ph--stat1` | Alain coaching a client, or his certificates on the wall |
 | Stat card "re-measured" | `.ph--stat2` | Tape measure / assessment moment |
 
 To fill one: drop the file here, then in `index.html` replace the placeholder

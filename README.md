@@ -77,7 +77,7 @@ Both are in `assets/css/main.css`, section 2.
 
 ### Still to do
 - Six remaining photos, and sharper originals of the Instagram ones (`assets/img/README.md`)
-- `assets/img/og.jpg` — 1200×630 social share image
+- ~~`assets/img/og.jpg`~~ done — the share image shows once the domain points at this site
 - Check the WhatsApp link opens a real chat
 - Terms of Service and Privacy pages
 - Google Business Profile and the Lebanese directory listings — see
