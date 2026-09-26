@@ -1,7 +1,7 @@
 # The Metal Clinic — website
 
 Static site for **The Metal Clinic**, an assessment-led coaching gym in Rabieh,
-Mount Lebanon (Alan Eid — ACSM-CPT, Pn1, ACE-FTS).
+Mount Lebanon (Alain Eid — ACSM-CPT, Pn1, ACE-FTS).
 
 No build step, no framework, no backend, no database. Plain HTML, CSS and about
 120 lines of JavaScript. Every enquiry is a `tel:` or `mailto:` link.
@@ -53,7 +53,7 @@ JSON-LD block in `index.html`.
 
 ## What's on the page
 
-Hero · About Alan · How it works (assess → prescribe → execute → review) ·
+Hero · About Alain · How it works (assess → prescribe → execute → review) ·
 Programs accordion (Transformation, One-to-one, Small group, Nutrition, Online) ·
 Why people stay · Three stat cards · Results (client before/afters) · Pricing (no figures — each card opens WhatsApp with a
 question about that package) · Contact with map and live open/closed status ·

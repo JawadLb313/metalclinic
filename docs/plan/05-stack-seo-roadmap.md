@@ -49,7 +49,7 @@ own. Do these in parallel with the build, not after it.
   name, image, `@id`, url, telephone, `address` (full `PostalAddress` with the
   town), `geo` (33.9194105 / 35.6151544), `openingHoursSpecification`,
   `priceRange`, `sameAs` (Instagram, Facebook).
-- `FAQPage` schema on the FAQ. `Person` schema for Alan with his certifications.
+- `FAQPage` schema on the FAQ. `Person` schema for Alain with his certifications.
   `Service` schema per programme.
 - **Every title and H1 carries a Lebanese locality** — town, Metn, Mount Lebanon.
   Never "Lebanon" alone: the research showed those queries get taken by Lebanon
@@ -76,7 +76,7 @@ own. Do these in parallel with the build, not after it.
 ## 4. Analytics & measurement
 
 - **Vercel Analytics** + **Speed Insights** — cookieless, no consent banner needed,
-  ~1 kB. GA4 only if Alan specifically wants it (it costs a cookie banner).
+  ~1 kB. GA4 only if Alain specifically wants it (it costs a cookie banner).
 - Track four events, no more: `assessment_form_submit`, `whatsapp_click`,
   `phone_click`, `directions_click`. Those four tell you whether the site works.
 - Add a "How did you hear about us?" field to the form — in a market this size,
@@ -104,7 +104,7 @@ own. Do these in parallel with the build, not after it.
 
 ## 6. Roadmap
 
-**Phase 0 — Answers & assets (blocks everything; ~1 week, mostly Alan's time)**
+**Phase 0 — Answers & assets (blocks everything; ~1 week, mostly Alain's time)**
 Address, hours, prices, package structure, WhatsApp confirmation, client consents,
 and the photo shoot. *Nothing should be coded before the shoot is booked* — the
 design depends on real photography.
@@ -118,7 +118,7 @@ Cutover, redirects, GBP completion, directory submissions, review-collection flo
 (a QR card at the desk that deep-links to the Google review form), Instagram bio rewrite.
 
 **Phase 3 — Only if the numbers justify it**
-Blog/MDX for local fitness content, CMS so Alan edits copy himself, Arabic
+Blog/MDX for local fitness content, CMS so Alain edits copy himself, Arabic
 localisation, online-coaching payments (Stripe), a real booking calendar.
 
 ---
@@ -129,7 +129,7 @@ localisation, online-coaching payments (Stripe), a real booking calendar.
 |---|---|
 | Copy ships with invented stats or testimonials | Every figure is a `[CONFIRM]`; `consent: true` is a required literal in the CaseFile type |
 | A broken `wa.me` link kills every enquiry | It is the only contact path — test on real iOS and Android after each deploy |
-| No lead record if Alan loses the chat | Accepted trade-off; revisit only if volume justifies a CRM |
+| No lead record if Alain loses the chat | Accepted trade-off; revisit only if volume justifies a CRM |
 | No professional photos → stock creeps in | Phase 0 gate: no build starts before the shoot is booked |
 | Prices published, then reality changes | Prices live in one file; a "from $X" pattern plus an on-request tier keeps it flexible |
 | Site launches, nothing changes in search | Local SEO tasks in Phase 2 are the actual lever; the site alone is not |

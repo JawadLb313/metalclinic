@@ -1,7 +1,5 @@
 # The Metal Clinic — Business & Digital Presence Research
 
-> **Name note:** the coach is **Alan** Eid — confirmed by the client. The old website and the search results quoted in this document spell it "Alain".
-
 **Status:** Research / planning only. Nothing is being built yet.
 **Compiled:** 2 September 2026
 **Sources requested:** Google Maps listing, Instagram `@themetalclinic`, Facebook `/themetalclinic`
@@ -37,7 +35,7 @@ owner or by opening the pages in a normal browser before it drives a decision.
 | Business name | THE METAL CLINIC / "The Metal Clinic Fitness Coaching" | Website, IG, FB |
 | Category | Personal fitness & nutrition coaching (in-person + online) — **not** a medical clinic and **not** metalwork | Website |
 | Founded | September 2020 | Website |
-| Founder / operator | Alan Eid | Website |
+| Founder / operator | Alain Eid | Website |
 | Country | Lebanon (ToS governed by Lebanese law) | Website ToS |
 | Location pin | 33.9194105, 35.6151544 — Matn district, Mount Lebanon | Google Maps URL |
 | Phone | +961 3 402 413 | Website / social |
@@ -62,7 +60,7 @@ This is a derived reading of the coordinates, not a quoted address.
 The website tells a specific, verifiable-sounding personal narrative that recurs
 identically across sources:
 
-- Alan Eid spent **11 years in the banking sector** before leaving it in **2018**
+- Alain Eid spent **11 years in the banking sector** before leaving it in **2018**
   to pursue fitness professionally.
 - He personally **lost 100 pounds**, having reached **class II obesity**.
 - He began exercising in **2006**, after doctors advised him to reduce body weight
@@ -122,7 +120,7 @@ is consistent with there being a Google Maps pin at all. Confirm with the owner 
   indexed — both are problems, and both point the same way.
 - Terms of service are **governed by the laws of Lebanon**; the payment,
   cancellation and booking clauses could not be read **[gap]**.
-- Homepage title tag: *"The Metal Clinic Fitness Coaching – by Alan Eid"* — good,
+- Homepage title tag: *"The Metal Clinic Fitness Coaching – by Alain Eid"* — good,
   it disambiguates from metalwork on the SERP.
 
 ### Instagram — @themetalclinic
@@ -207,7 +205,7 @@ Ranked by how much they'd change a plan:
    screenshots would replace all the guesswork in §4.
 9. **Booking flow today** — DM, WhatsApp, phone? Is +961 3 402 413 a WhatsApp number?
 10. **Language** — is the audience English-first, or does Arabic/French content matter?
-11. **Any other names in the business** — additional coaches, or is it Alan solo?
+11. **Any other names in the business** — additional coaches, or is it Alain solo?
 
 ---
 

@@ -21,11 +21,11 @@ and they drop in under the same filenames.
 
 | Slot | CSS hook | Wanted |
 |---|---|---|
-| ~~One-to-one programme~~ | — | Filled: `coach-alan.webp` (caption cropped off, AI-upscaled) |
+| ~~One-to-one programme~~ | — | Filled: `coach-alain.webp` (caption cropped off, AI-upscaled) |
 | Nutrition programme | `.ph--p3` | Real food — a plate or a meal-prep box |
 | Online programme | `.ph--p4` | A phone showing a workout, gym blurred behind |
 | "Why people stay" | `.ph--room` | The gym, empty, wide shot |
-| Stat card "one coach" | `.ph--stat1` | Alan watching a client's rep |
+| Stat card "one coach" | `.ph--stat1` | Alain watching a client's rep |
 | Stat card "re-measured" | `.ph--stat2` | Tape measure / assessment moment |
 
 To fill one: drop the file here, then in `index.html` replace the placeholder

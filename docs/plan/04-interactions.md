@@ -186,7 +186,7 @@ client.
 
 **Composed message**
 ```
-Hi Alan — I'd like to book an assessment.
+Hi Alain — I'd like to book an assessment.
 
 Name: Karim
 Interested in: Transformation Protocol
