@@ -18,11 +18,11 @@
 :root{
   --ink-950:#0A0A0B; --ink-900:#101114; --ink-850:#16181C; --ink-800:#1C1F24; --ink-700:#272B31;
   --chalk:#F5F6F8; --steel:#A9B0BA; --steel-dim:#767D88;
-  /* brand red, from the Instagram identity.
-     --brand       text, icons, rules on black      (5.6:1 on ink-950)
-     --brand-fill  button / label backgrounds, white text on top (5.4:1) */
-  --brand:#FF3B3B; --brand-400:#FF6B6B;
-  --brand-fill:#D11F1F; --brand-fill-600:#B01818;
+  /* brand gold.
+     --brand       text, icons, rules on black           (9.4:1 on ink-950)
+     --brand-fill  button / label backgrounds, dark text on top (7.7:1) */
+  --brand:#D4AF37; --brand-400:#E8C766;
+  --brand-fill:#C9A227; --brand-fill-600:#B38E1C;
   --ok:#5BE49B;
   --disp:'Anton','Arial Narrow',system-ui,sans-serif;
   --body:'Barlow',system-ui,-apple-system,sans-serif;
@@ -44,7 +44,7 @@ img{max-width:100%;display:block}
 ul{list-style:none}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 :focus-visible{outline:2px solid var(--brand);outline-offset:3px}
-::selection{background:var(--brand-fill);color:#fff}
+::selection{background:var(--brand-fill);color:#0A0A0B}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
 /* ---------- 4. layout ---------- */
@@ -58,7 +58,7 @@ h2{font-size:clamp(34px,5.2vw,60px);margin:20px 0 22px}
 .chead h2{margin:16px 0 12px}
 .chead p{max-width:52ch;margin:0 auto;font-size:16.5px}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--disp);text-transform:uppercase;font-size:15px;letter-spacing:.03em;padding:17px 32px;background:var(--brand-fill);color:#fff;transition:background .15s ease}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--disp);text-transform:uppercase;font-size:15px;letter-spacing:.03em;padding:17px 32px;background:var(--brand-fill);color:#0A0A0B;transition:background .15s ease}
 .btn:hover{background:var(--brand-fill-600)}
 .btn svg{width:16px;height:16px;stroke:currentColor;fill:none;flex:none}
 .btn.ghost{background:transparent;border:1px solid var(--ink-700);color:var(--chalk)}
@@ -102,15 +102,15 @@ footer .logoimg{height:78px}
 .mbar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:none;background:rgba(10,10,11,.96);backdrop-filter:blur(10px);border-top:1px solid var(--ink-700)}
 .mbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:9px;padding:16px 8px;font-family:var(--disp);text-transform:uppercase;font-size:14px;color:var(--chalk)}
 .mbar a svg{width:17px;height:17px;stroke:var(--brand);fill:none}
-.mbar a.primary{background:var(--brand-fill);color:#fff}
-.mbar a.primary svg{stroke:#fff}
+.mbar a.primary{background:var(--brand-fill);color:#0A0A0B}
+.mbar a.primary svg{stroke:#0A0A0B}
 
 /* ---------- 6. hero ---------- */
 .hero{min-height:min(800px,100svh);display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(130px,18vw,190px) 0 clamp(32px,5vw,48px);overflow:hidden}
 /* no photo for now: a dark red glow and a faint hatch carry the right-hand side */
 .hero{background:
-  radial-gradient(55% 65% at 88% 28%,rgba(209,31,31,.26),transparent 70%),
-  radial-gradient(40% 45% at 70% 90%,rgba(209,31,31,.10),transparent 70%),
+  radial-gradient(55% 65% at 88% 28%,rgba(201,162,39,.17),transparent 70%),
+  radial-gradient(40% 45% at 70% 90%,rgba(201,162,39,.07),transparent 70%),
   var(--ink-950)}
 .hero::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
   background-image:repeating-linear-gradient(115deg,rgba(255,255,255,.022) 0 1px,transparent 1px 9px);
@@ -135,7 +135,7 @@ h1.big em{font-style:normal;color:var(--brand)}
 .hcard .watch small{display:block;font-family:var(--mono);font-size:9.5px;font-weight:700;letter-spacing:.18em;color:var(--steel-dim);margin-top:7px}
 .hcard .play{width:48px;height:48px;flex:none;border:2px solid var(--brand);border-radius:50%;display:grid;place-items:center;transition:background .2s ease,border-color .2s ease}
 .hcard:hover .play{background:var(--brand-fill);border-color:var(--brand-fill)}
-.hcard:hover .play svg{fill:#fff}
+.hcard:hover .play svg{fill:#0A0A0B}
 .hcard .play svg{width:14px;height:14px;margin-left:3px;fill:var(--brand)}
 .hmeta{flex:none;border-left:1px solid rgba(245,246,248,.13);padding-left:26px}
 .hmeta .n{font-family:var(--mono);font-weight:700;font-size:26px;color:var(--brand);line-height:1}
@@ -220,9 +220,9 @@ h1.big em{font-style:normal;color:var(--brand)}
 .pricing{padding:var(--sec) 0;background:var(--ink-900);border-top:1px solid var(--ink-700)}
 .tiers{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:clamp(36px,5vw,54px)}
 .tier{background:var(--ink-850);border:1px solid var(--ink-700);padding:34px 26px 28px;display:flex;flex-direction:column;position:relative}
-.tier.feat{background:var(--ink-800);border-color:rgba(255,59,59,.45)}
+.tier.feat{background:var(--ink-800);border-color:rgba(212,175,55,.45)}
 .tier.feat::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--brand)}
-.tier .flag{position:absolute;top:-11px;right:26px;font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;background:var(--brand-fill);color:#fff;padding:5px 10px}
+.tier .flag{position:absolute;top:-11px;right:26px;font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;background:var(--brand-fill);color:#0A0A0B;padding:5px 10px}
 .tier .nm{font-family:var(--disp);text-transform:uppercase;font-size:26px;color:var(--chalk);line-height:1}
 .tier .ds{font-size:14.5px;margin-top:12px;line-height:1.55}
 .tier .prices{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--ink-700);border:1px solid var(--ink-700);margin-top:22px}
@@ -240,7 +240,7 @@ h1.big em{font-style:normal;color:var(--brand)}
 .ba figure{position:relative;overflow:hidden;background:var(--ink-850);min-height:0}
 .ba img{width:100%;height:100%;object-fit:cover;object-position:50% 25%;display:block}
 .ba figcaption{position:absolute;left:10px;bottom:10px;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:5px 9px;background:rgba(10,10,11,.82);color:var(--chalk)}
-.ba figure+figure figcaption{background:var(--brand-fill);color:#fff}
+.ba figure+figure figcaption{background:var(--brand-fill);color:#0A0A0B}
 .ba--tall{height:clamp(380px,44vw,560px)}
 .ba--tall img{object-position:50% 10%}
 .ba--result{aspect-ratio:16/11}
@@ -266,10 +266,10 @@ h1.big em{font-style:normal;color:var(--brand)}
 .contact{border-top:1px solid var(--ink-700);display:grid;grid-template-columns:1.02fr 1fr}
 .cleft{padding:var(--sec) clamp(24px,4vw,64px) var(--sec) max(var(--gut),calc((100vw - var(--max))/2 + var(--gut)))}
 .cright{position:relative;min-height:420px}
-.map{position:absolute;inset:0;background:radial-gradient(60% 50% at 52% 44%,rgba(255,59,59,.14),transparent 70%),linear-gradient(150deg,#15181C,#0C0D10);overflow:hidden}
+.map{position:absolute;inset:0;background:radial-gradient(60% 50% at 52% 44%,rgba(212,175,55,.14),transparent 70%),linear-gradient(150deg,#15181C,#0C0D10);overflow:hidden}
 .map .roads{position:absolute;inset:0;width:100%;height:100%;opacity:.5}
 .pin{position:absolute;left:52%;top:44%;transform:translate(-50%,-100%);z-index:3;text-align:center}
-.pin .dot{display:block;width:22px;height:22px;background:var(--brand);border-radius:50% 50% 50% 0;transform:rotate(-45deg);margin:0 auto;box-shadow:0 0 0 8px rgba(255,59,59,.16)}
+.pin .dot{display:block;width:22px;height:22px;background:var(--brand);border-radius:50% 50% 50% 0;transform:rotate(-45deg);margin:0 auto;box-shadow:0 0 0 8px rgba(212,175,55,.16)}
 .pin .lb{display:block;margin-top:14px;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(10,10,11,.82);border:1px solid var(--ink-700);padding:6px 10px;white-space:nowrap}
 .crows{margin-top:40px}
 .crow{display:flex;gap:20px;align-items:center;padding:20px 0;border-bottom:1px solid var(--ink-700);transition:border-color .15s}
@@ -378,17 +378,17 @@ footer{border-top:1px solid var(--ink-700);padding:clamp(48px,7vw,74px) 0 34px}
    ============================================================ */
 .ph{position:relative;overflow:hidden;background-size:cover;background-position:center;
   background-image:
-    radial-gradient(120% 90% at 78% 12%,rgba(209,31,31,.20),transparent 55%),
+    radial-gradient(120% 90% at 78% 12%,rgba(201,162,39,.20),transparent 55%),
     radial-gradient(90% 70% at 18% 88%,rgba(120,145,175,.13),transparent 60%),
     linear-gradient(160deg,#1E2126 0%,#111317 45%,#0B0C0E 100%)}
 .ph::after{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(115deg,rgba(255,255,255,.028) 0 1px,transparent 1px 7px)}
 .ph.warm{background-image:
-    radial-gradient(110% 80% at 62% 20%,rgba(209,31,31,.30),transparent 58%),
+    radial-gradient(110% 80% at 62% 20%,rgba(201,162,39,.30),transparent 58%),
     radial-gradient(80% 70% at 12% 92%,rgba(90,120,155,.16),transparent 62%),
     linear-gradient(155deg,#25282E 0%,#131519 50%,#0A0B0D 100%)}
 .ph.cool{background-image:
     radial-gradient(100% 80% at 25% 15%,rgba(150,175,205,.20),transparent 60%),
-    radial-gradient(90% 70% at 85% 90%,rgba(209,31,31,.13),transparent 60%),
+    radial-gradient(90% 70% at 85% 90%,rgba(201,162,39,.13),transparent 60%),
     linear-gradient(200deg,#1B1E23 0%,#101216 55%,#090A0C 100%)}
 .ph .tag{position:absolute;left:14px;top:12px;z-index:2;font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,246,248,.42);border:1px solid rgba(245,246,248,.14);padding:4px 8px;background:rgba(10,10,11,.45)}
 .ph .tag{display:none}               /* captions only document which shot goes where */

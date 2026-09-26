@@ -71,8 +71,8 @@ Instagram's player does not autoplay; for an autoplaying loop, add the `.mp4`
 to `assets/` and replace the embed with a `<video autoplay muted loop playsinline>`.
 
 ### Brand colour
-The accent is the Instagram brand red: `--brand` (#FF3B3B) for text and lines
-on black, `--brand-fill` (#D11F1F) behind white text on buttons and labels.
+Black and gold: `--brand` (#D4AF37) for text and lines on black, `--brand-fill`
+(#C9A227) behind dark text on buttons and labels.
 Both are in `assets/css/main.css`, section 2.
 
 ### Still to do
