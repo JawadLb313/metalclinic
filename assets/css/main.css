@@ -198,7 +198,7 @@ h1.big em{font-style:normal;color:var(--brand)}
 .body .photo.photo--tall{height:auto;aspect-ratio:3/4}   /* portrait panels: show the whole person, not a slice */
 .body .photo--tall img{object-position:50% 12%}
 .body .photo--coach img{object-position:50% 0%}
-.body .photo--low img{object-position:50% 100%}
+.body .photo.photo--sg{aspect-ratio:311/442}   /* the graphic's own shape, so its title and price box are never cropped */
 .body p{font-size:15.5px;line-height:1.65;max-width:52ch}
 .ticks{margin-top:20px;display:flex;flex-direction:column;gap:11px}
 .ticks li{display:flex;gap:11px;align-items:flex-start;font-size:15px;color:#D4D9E0}
