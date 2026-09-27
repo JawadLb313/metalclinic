@@ -53,9 +53,9 @@ JSON-LD block in `index.html`.
 
 ## What's on the page
 
-Hero · About Alain · How it works (assess → prescribe → execute → review) ·
+Hero · About Alain (the 100 lb story) · How it works (assess → prescribe → execute → review) ·
 Programs accordion (Transformation, One-to-one, Small group, Nutrition, Online) ·
-Why people stay · Three stat cards · Results (client before/afters) · Pricing (no figures — each card opens WhatsApp with a
+Why people stay with the gym-tour video · Pricing (no figures — each card opens WhatsApp with a
 question about that package) · Contact with map and live open/closed status ·
 Closing call to action · Footer.
 
@@ -76,8 +76,7 @@ Black and gold: `--brand` (#D4AF37) for text and lines on black, `--brand-fill`
 Both are in `assets/css/main.css`, section 2.
 
 ### Still to do
-- Photos: the whole gym, plus the nutrition and online program sections and
-  the two stat cards (`assets/img/README.md`)
+- Photos: optional — for the hero, Transformation and Small Group
 - Confirm or soften the unverified copy (fact-check items 1–8)
 - Email address — none on the site until the clinic chooses one
 - No Terms of Service or Privacy page, by decision: the site collects no data
