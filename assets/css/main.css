@@ -312,6 +312,7 @@ footer{border-top:1px solid var(--ink-700);padding:clamp(48px,7vw,74px) 0 34px}
 .soc a:hover{border-color:var(--brand)}
 .soc svg{width:17px;height:17px;stroke:var(--chalk);fill:none}
 .soc svg.solid{fill:var(--chalk);stroke:none}
+.fbot .credit{color:var(--steel);text-transform:none;letter-spacing:.06em}
 .fword{font-family:var(--disp);text-transform:uppercase;font-size:clamp(64px,15.5vw,236px);line-height:.8;text-align:center;color:#131519;margin:clamp(26px,4vw,44px) 0 -.12em;white-space:nowrap;overflow:hidden;user-select:none}
 .fbot{margin-top:clamp(34px,5vw,56px);padding-top:26px;border-top:1px solid var(--ink-700);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--steel-dim)}
 
