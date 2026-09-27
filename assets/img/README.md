@@ -22,9 +22,9 @@ and they drop in under the same filenames.
 | Slot | CSS hook | Wanted |
 |---|---|---|
 | ~~One-to-one programme~~ | — | Filled: `coach-alain.webp` — full photo, caption removed with LaMa inpainting, AI-upscaled 4× |
-| Nutrition programme | `.ph--p3` | Real food — a plate or a meal-prep box |
-| Online programme | `.ph--p4` | A phone showing a workout, gym blurred behind |
-| "Why people stay" | `.ph--room` | The gym, empty, wide shot |
+| ~~Nutrition program~~ | — | Filled: `nutrition.webp` — from their carbs post; the text box removed by undoing its dimming and inpainting the lettering |
+| ~~Online program~~ | — | Filled: `online.webp` — side-profile check-in photo, AI-upscaled |
+| ~~"Why people stay"~~ | — | Filled: gym tour video card (Instagram CqWFWyYgtWt), cover `gym.webp` cut from the small-group photo with no one in frame |
 | Stat card "4 certifications" | `.ph--stat1` | Alain coaching a client, or his certificates on the wall |
 | Stat card "$12.50 per session" | `.ph--stat2` | A small-group session in progress |
 
