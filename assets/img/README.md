@@ -26,7 +26,7 @@ and they drop in under the same filenames.
 | Online programme | `.ph--p4` | A phone showing a workout, gym blurred behind |
 | "Why people stay" | `.ph--room` | The gym, empty, wide shot |
 | Stat card "4 certifications" | `.ph--stat1` | Alain coaching a client, or his certificates on the wall |
-| Stat card "re-measured" | `.ph--stat2` | Tape measure / assessment moment |
+| Stat card "$12.50 per session" | `.ph--stat2` | A small-group session in progress |
 
 To fill one: drop the file here, then in `index.html` replace the placeholder
 `<div class="ph …"></div>` with
