@@ -25,8 +25,6 @@ and they drop in under the same filenames.
 | ~~Nutrition program~~ | — | Filled: `nutrition.webp` — from their carbs post; the text box removed by undoing its dimming and inpainting the lettering |
 | ~~Online program~~ | — | Filled: `online.webp` — side-profile check-in photo, AI-upscaled |
 | ~~"Why people stay"~~ | — | Filled: gym tour video card (Instagram CqWFWyYgtWt), cover `gym.webp` cut from the small-group photo with no one in frame |
-| Stat card "4 certifications" | `.ph--stat1` | Alain coaching a client, or his certificates on the wall |
-| Stat card "$12.50 per session" | `.ph--stat2` | A small-group session in progress |
 
 To fill one: drop the file here, then in `index.html` replace the placeholder
 `<div class="ph …"></div>` with
