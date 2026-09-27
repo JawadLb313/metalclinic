@@ -8,6 +8,10 @@
 | `coach-alain.webp` | One-to-One Personal Training. The "University Discounts" caption was painted out with AI inpainting, then upscaled. |
 | `nutrition.webp` | Nutrition Coaching. From the clinic's carbs post, with its text box removed. |
 | `online.webp` | Online Coaching. Side-profile check-in photo, upscaled. |
+| `hero.webp` | Hero, right side (a banner above the headline on phones). From the clinic's "Built in silence" poster, with the headline, logo and tagline removed by AI inpainting, then upscaled. |
+| `smallgroup.webp` | Small-Group Personal Training. From the "Stronger Every Rep" graphic, with the title and price box removed. |
+| `room.webp` | Cover of the gym-tour card in "Why people stay". The brass "Iron Oak Fitness" plaque (another gym's name) was painted out. |
+| `dumbbells-bw.webp` | Background of the closing "Built in silence." banner. |
 | `og.jpg` | The preview image shown when the site link is shared (WhatsApp, Instagram, Facebook). |
 
 ## Removed on purpose
@@ -18,9 +22,7 @@ and the hip-thrust photo were taken off the site at the client's request. The
 
 ## Adding a photo later
 
-Sections that currently have no photo: the hero, Transformation, Small Group,
-and the gym-tour card (it plays the Instagram tour video; it has no cover
-image). To add one to a program, drop the file in this folder and put this
+The only program without a photo is Transformation. To add one to a program, drop the file in this folder and put this
 inside that program's `<div class="body">` in `index.html`, before the text:
 
     <div class="photo"><img src="/assets/img/FILE.webp" alt="What the photo shows"></div>
