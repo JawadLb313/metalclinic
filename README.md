@@ -76,13 +76,12 @@ Black and gold: `--brand` (#D4AF37) for text and lines on black, `--brand-fill`
 Both are in `assets/css/main.css`, section 2.
 
 ### Still to do
-- Six remaining photos, and sharper originals of the Instagram ones (`assets/img/README.md`)
-- ~~`assets/img/og.jpg`~~ done — the share image shows once the domain points at this site
-- Check the WhatsApp link opens a real chat
-- Terms of Service and Privacy pages
-- Google Business Profile and the Lebanese directory listings — see
-  `docs/plan/05-stack-seo-roadmap.md`; this matters more for being found than
-  the site itself does
+- Photos: the whole gym, plus the nutrition and online program sections and
+  the two stat cards (`assets/img/README.md`)
+- Confirm or soften the unverified copy (fact-check items 1–8)
+- Email address — none on the site until the clinic chooses one
+- No Terms of Service or Privacy page, by decision: the site collects no data
+  and has no forms
 
 ---
 
