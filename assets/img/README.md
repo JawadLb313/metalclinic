@@ -12,6 +12,9 @@
 | `smallgroup.webp` | Small-Group Personal Training. The clinic's "Stronger Every Rep — Small Group PT $125/12 sessions" graphic, unchanged apart from upscaling. Shown uncropped. |
 | `room.webp` | Cover of the gym-tour card in "Why people stay". The brass "Iron Oak Fitness" plaque (another gym's name) was painted out. |
 | `dumbbells-bw.webp` | Background of the closing "Built in silence." banner. |
+| `reel-dose.webp` | "The method" strip, left frame. AI-generated weight stack, graded to warm black-and-white with the pin recoloured brand gold. |
+| `reel-work.webp` | "The method" strip, middle frame. AI-generated lifter on a cable machine, same grade. |
+| `reel-detail.webp` | "The method" strip, right frame. AI-generated cable-handle close-up, same grade. |
 | `og.jpg` | The preview image shown when the site link is shared (WhatsApp, Instagram, Facebook). |
 
 ## Removed on purpose

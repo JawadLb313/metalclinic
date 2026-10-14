@@ -173,6 +173,41 @@ h1.big em{font-style:normal;color:var(--brand)}
 .step:nth-child(4) .bar{width:22%}
 .step .n{font-family:var(--mono);font-weight:700;font-size:12px;letter-spacing:.2em;color:var(--brand)}
 .step h3{font-size:26px;margin:16px 0 12px}
+
+/* ---------- 8b. reel: full-bleed three-frame strip ---------- */
+.reel{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--ink-950);height:min(92vh,900px);min-height:560px;overflow:hidden}
+.reel::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(0deg,var(--ink-950) 0%,rgba(10,10,11,.78) 22%,rgba(10,10,11,0) 54%)}
+.reel .frame{position:relative;margin:0;overflow:hidden;background:var(--ink-900)}
+.reel .frame::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(180deg,rgba(10,10,11,.85) 0%,rgba(10,10,11,.45) 14%,rgba(10,10,11,0) 30%)}
+.reel .frame img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s cubic-bezier(.2,.7,.2,1),filter .5s ease}
+.reel figcaption{position:absolute;left:clamp(16px,2.2vw,32px);top:clamp(20px,2.8vw,36px);z-index:2;
+  font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--chalk);text-shadow:0 1px 12px rgba(0,0,0,.9)}
+.reel figcaption b{color:var(--brand);margin-right:12px}
+.reel figcaption span{display:block;margin-top:8px;font-size:10px;font-weight:500;letter-spacing:.14em;color:#C9CED6}
+.reel-line{position:absolute;left:0;right:0;bottom:clamp(40px,6vw,84px);z-index:3;text-align:center;padding:0 var(--gut)}
+.reel-line h2{font-size:clamp(48px,9.4vw,136px);margin:16px 0 0}
+.reel-line h2 em{font-style:normal;color:var(--brand)}
+@media (hover:hover){
+  .reel:hover .frame img{filter:brightness(.55)}
+  .reel .frame:hover img{filter:none;transform:scale(1.04)}
+}
+/* frames rise in one after another (only when JS adds .pre, so it never hides them without JS) */
+.reel.pre .frame{clip-path:inset(100% 0 0 0);transition:clip-path 1.1s cubic-bezier(.7,0,.2,1)}
+.reel.pre .frame--work{transition-delay:.12s}
+.reel.pre .frame--detail{transition-delay:.24s}
+.reel.pre.in .frame{clip-path:inset(0 0 0 0)}
+.reel.pre .reel-line{opacity:0;transform:translateY(24px);transition:opacity .9s ease .5s,transform .9s ease .5s}
+.reel.pre.in .reel-line{opacity:1;transform:none}
+@media (max-width:760px){
+  .reel{height:clamp(440px,132vw,580px);min-height:0}
+  .reel figcaption{left:10px;top:14px;font-size:9.5px;letter-spacing:.14em}
+  .reel figcaption b{display:block;margin:0 0 5px}
+  .reel figcaption span{display:none}
+  .frame--dose img{object-position:64% 50%}
+  .frame--work img{object-position:40% 50%}
+}
 .step p{font-size:14.5px;line-height:1.6}
 
 /* ---------- 9. programs ---------- */
@@ -279,7 +314,7 @@ h1.big em{font-style:normal;color:var(--brand)}
 .crow .ic{width:44px;height:44px;flex:none;border:1px solid var(--ink-700);display:grid;place-items:center;background:var(--ink-850)}
 .crow .ic svg{width:19px;height:19px;stroke:var(--brand);fill:none}
 .crow .k{display:block;font-family:var(--mono);font-size:9.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--steel-dim)}
-.crow .v{display:block;font-size:17.5px;color:var(--chalk);font-weight:500;margin-top:3px}
+.crow .v{display:block;font-size:17.5px;color:var(--chalk);font-weight:500;margin-top:3px;overflow-wrap:anywhere}
 .crow .go{margin-left:auto;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--brand);white-space:nowrap}
 .hours{margin-top:32px;display:flex;gap:34px;flex-wrap:wrap}
 .hours div{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--steel-dim)}
@@ -330,7 +365,7 @@ footer{border-top:1px solid var(--ink-700);padding:clamp(48px,7vw,74px) 0 34px}
   .aboutgrid,.whygrid{grid-template-columns:1fr}
   .about .ph{order:-1}
   .about .mark{order:2}
-  .contact{grid-template-columns:1fr}
+  .contact{grid-template-columns:minmax(0,1fr)}
   .cleft{padding:var(--sec) var(--gut)}
   .cright{min-height:340px}
   .fgrid{grid-template-columns:1fr 1fr}
@@ -366,6 +401,10 @@ footer{border-top:1px solid var(--ink-700);padding:clamp(48px,7vw,74px) 0 34px}
   .logoimg{height:54px}
   .hdr.stuck .logoimg{height:44px}
   .creds{font-size:10px;letter-spacing:.12em}
+}
+@media (max-width:400px){
+  .crow{gap:14px}
+  .crow .v{font-size:15px}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}

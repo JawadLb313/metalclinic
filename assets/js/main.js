@@ -149,6 +149,16 @@
     if (n > 0) yrs.textContent = n;
   }
 
+  /* ---------- reel: frames rise in once the strip scrolls into view ---------- */
+  var reel = document.querySelector('.reel');
+  if (reel && 'IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    reel.classList.add('pre');
+    var ro = new IntersectionObserver(function (es) {
+      if (es[0].isIntersecting) { reel.classList.add('in'); ro.disconnect(); }
+    }, { threshold: 0.25 });
+    ro.observe(reel);
+  }
+
   /* ---------- footer year ---------- */
   var yr = document.getElementById('yr');
   if (yr) yr.textContent = new Date().getFullYear();
